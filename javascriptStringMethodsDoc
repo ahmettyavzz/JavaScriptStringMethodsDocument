@@ -1,0 +1,56 @@
+# concat
+It is used to collect string expressions.
+var name="ahmet"
+var surname="yavuz"
+console.log( name.concat(" "+surname) );    	 					                                              	Console: "ahmet yavuz"
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# indexOf-lastindexOf
+Finds the index of the searched string in the string expression. (Indexes start from 0.)
+let kurs = "JavaScript String Ifadeler"
+console.log( kurs.indexOf("String") );                                                                 Console: 11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# toUpperCase-toLowerCase
+var str = "Hello World!"; 
+Converts each character of the string expression to uppercase.
+console.log( str.toUpperCase())  		                                                                   Console: "HELLO WORLD"
+
+Converts each character of the string expression to lowercase.
+console.log( str.toLowerCase())                                                                        Console: "hello world"
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# trim
+Removes leading and trailing spaces from a string expression.
+var greeting="         JavaScript! ";
+console.log( greeting.trim());                                                                         Console: "JavaScript!" 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+var str = "JavaScript,JAVA,SpringBoot";
+#	slice
+It pulls the string expression from the specified indexes from the string expression.
+console.log(  str.slice(11,15));  	 						                 Console: "JAVA" 
+		
+If no end value is specified, it takes until the end of the string expression.
+console.log(  str.slice(11) );                                                                          Console: "JAVA,SpringBoot"
+
+Reverse reading can also be done with the rightmost (-1).
+console.log( str.slice(-10,-4));    		 					                                                    	Console: "Spring"
+		
+#	substring
+The only difference between substring and slice is that it does not take a value with (-).
+#	substr
+The first value determines the index to start with and the second value determines how many indexes
+it will receive.
+console.log( str.substr(4,3));   									Console: "Scr"
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#	split
+Splits the String according to the character we specify and assigns it to an array.
+var adsoyad= "Ahmet.Yavuz"; 
+console.log( adsoyad.split(".") );  							                                                      Console: ["Ahmet","Yavuz"]
+console.log( adsoyad.split("a") );    							                                                    Console: ["Ahmet.Y", "vuz"]
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url="https://asdlksamdl"
+# startsWith - endsWith
+It returns a boolean value whether the string begins or ends with the said string.
+console.log( url.startsWith('http'));                                                                   Console: True
+console.log( url.endsWith('dll'));                                                                      Console: False
+#	includes
+Returns boolean whether the string contains the value entered.
+console.log( url.includes('lks'));                                                                      Console: True
